@@ -1,0 +1,560 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Shantell Sans", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f9f4ef;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #020826;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  color: #716040;
+}
+
+.content-2,
+.content-3,
+.my-project,
+.contact {
+  padding: 6rem;
+  overflow-x: hidden;
+}
+
+/* btn primary */
+.btn {
+  text-decoration: none;
+  background-color: #584c33;
+  color: #fffffe;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #fffffe;
+  border: #584c33 1px solid;
+  color: #584c33;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  z-index: 99999;
+}
+
+.navbar .container-fluid .navbar-brand,
+.navbar .nav-link {
+  color: #584c33;
+}
+
+.fixNav .container-fluid .navbar-brand,
+.fixNav .nav-link {
+  color: #fffffe;
+}
+
+.fixNav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  transition: all 1s ease-in-out;
+  color: #fffffe;
+  background-color: #584c33;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-items .nav-link,
+.nav-icons .nav-link {
+  font-size: 24px;
+}
+
+.nav-icons .nav-link:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .navbar-brand {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.navbar .nav-link {
+  margin: 0 1rem;
+  letter-spacing: 2px;
+}
+
+.navbar .nav-page .nav-link:hover {
+  border-bottom: 1px solid #584c33;
+}
+
+/* content */
+.content {
+  margin-top: 3rem;
+}
+
+.content .btn {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #584c33;
+  color: white;
+  width: 150px;
+  padding: 1rem;
+}
+
+.content .btn:hover {
+  background-color: #f9f4ef;
+  border: #584c33 1px solid;
+  color: #584c33;
+}
+
+/* .content .btn-work {
+  background-color: #f9f4ef;
+  border: #584c33 2px solid;
+  color: #020826;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  padding: 1rem;
+}
+
+.content .btn-work:hover {
+  background-color: #584c33;
+  color: white;
+} */
+
+.content p {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.content h1 {
+  font-size: 56px;
+  margin-bottom: 2rem;
+}
+
+.content p span {
+  font-weight: 600;
+}
+
+.content img {
+  display: block;
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* content-2 */
+.content-2 {
+  background-color: #fffffe;
+  color: #fffffe;
+}
+
+.content-2 .card {
+  background-color: #eaddcf;
+  height: 230px;
+  min-height: 230px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-2 .card p {
+  color: #716040;
+}
+
+.content-2 .card h5 {
+  color: #020826;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+/* content-3 */
+
+.content-3 ul.ket {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-3 ul.ket li {
+  margin: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.content-3 input.dropdown:checked + label,
+.content-3 input.dropdown:not(checked) + label {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-3 .dropdown-content {
+  margin: 1rem 10rem;
+}
+
+.list-dropdown {
+  display: none;
+  width: 50%;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.content-3 .list-dropdown ul li {
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-3 .dropdown-content label i {
+  color: #584c33;
+}
+
+/* my projects */
+
+#search input[type="text"] {
+  width: 300px;
+  margin: 1rem auto;
+  padding: 10px 10px 10px -15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #584c33;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.my-project {
+  background-color: #fffffe;
+}
+
+.my-project h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.my-project input {
+  background: url("../img/icons/search.png") no-repeat left;
+  background-size: 30px;
+  border-radius: 30px;
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+}
+
+.my-project .filter-btn {
+  text-align: center;
+}
+
+.my-project .projects {
+  margin: 1rem 3rem;
+}
+
+.my-project .projects .card-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my-project .projects .card-box .card {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  margin: 1rem;
+}
+
+.my-project .projects .card-box .card .btn-detail {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+}
+
+.my-project .projects .card-box .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.show {
+  display: block;
+}
+
+.my-project .btn-p-filter {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: #fffffe;
+  border: 1px solid #584c33;
+}
+
+.modal-dialog {
+  position: absolute;
+  width: 60%;
+  left: 19.4%;
+  top: 15%;
+}
+
+.modal-body {
+  display: flex;
+}
+
+.modal-body .modal-img {
+  margin-right: 1rem;
+}
+
+.modal-body .modal-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.modal-body .modal-text {
+  max-width: 50%;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.active-filter {
+  background-color: #584c33 !important;
+  color: #fffffe;
+}
+
+/* content-contact */
+
+.contact h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact form {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.contact form .btn {
+  padding: 10px 15px 10px 10px;
+}
+
+.contact form .btn:hover {
+  background-color: #f9f4ef;
+}
+
+.contact form .btn i {
+  margin: 0 5px;
+}
+
+/* footer */
+.footer {
+  background-color: #584c33;
+  padding: 2rem;
+  text-align: center;
+  color: #fffffe;
+}
+
+.footer p {
+  margin: 0;
+  color: #fffffe;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 1rem;
+}
+
+.footer ul li a {
+  font-size: 2rem;
+}
+
+/* responsive */
+@media (max-width: 991.98px) {
+  /* navbar */
+
+  .navbar .container-fluid .nav-icons {
+    display: none;
+  }
+
+  .navbar .container-fluid .d-flex {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar .container-fluid .d-flex button {
+    order: 3;
+  }
+
+  .navbar-nav {
+    margin-top: 2rem;
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+
+  /* content */
+
+  .content {
+    padding: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .content .pos-2 {
+    order: 2;
+  }
+
+  .content .pos-1 {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* content-3 */
+  .content-3 {
+    padding: 2rem 1rem;
+  }
+
+  /* work  */
+
+  .content-projects img {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* project */
+
+  .content-project-1 {
+    padding: 0 3rem;
+  }
+
+  .content-project-1 img {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 856px) {
+  /* card project */
+
+  .my-project .projects .card {
+    width: 30rem;
+  }
+
+  /* modal responsive */
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-body .modal-img {
+    margin: 0;
+  }
+
+  .modal-body .modal-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* contact */
+  .contact form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-project,
+  .content-2,
+  .contact {
+    padding: 6rem 0;
+  }
+
+  .fixNav {
+    position: sticky;
+  }
+
+  /* content */
+
+  .content .btn {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .content img {
+    width: 100%;
+    height: 500px;
+  }
+
+  /* content 2 */
+
+  .content-2 .card {
+    margin: 1rem;
+  }
+
+  /* content-3 */
+  .content-3 .dropdown-content {
+    margin: 1rem;
+  }
+
+  .list-dropdown {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .list-dropdown ul {
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  /* my project */
+  .my-project .projects {
+    margin: 1rem;
+  }
+}
